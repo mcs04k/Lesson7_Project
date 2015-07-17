@@ -1,9 +1,9 @@
-*****************************************************
-Project Name:  Recipe Display Application
-Author: 
-Date:   
+************************************************************************
+Project Name:  Recipe Display Application  --  Project Quiz
+Author: Michael Sutter 
+Date:   7/17/15
 Participation Assignment (25 points)
-*****************************************************
+************************************************************************
 
 Instructions:  
 Answer the following questions for Lesson 7 Assignment
@@ -14,6 +14,7 @@ Question #1:  (5 points)
 Why should you ensure that the script element that links to the jQuery library file comes before any other script element for a .js file that includes jQuery code?
 
 
+JavaScript is needed to help render HTML and determine it’s behavior, thus may be referenced within a documents head by way of a library file so that it may define jQuery functions thereafter.
 
 
 ++++++++++++
@@ -21,7 +22,7 @@ Question #2:  (5 points)
 ++++++++++++
 Why should you avoid including jQuery in a project if you don't need it?
 
-
+Because when a web page loads it stumbles upon a script tag and has to stop what it's doing to load an external script file. This causes the web page in question to load slower. So if I had a web page laden with Jquery scripts, it would turn a really cool and smooth website into a ton of wet concrete streaming very slowy down a hill. If there is one thing everyone wants is a fast and seamless user experience and loading multiple external scripts can be frustrating to experience as a user.
 
 
 
@@ -32,10 +33,21 @@ Question #3:  (5 points)
 How does every jQuery statement start?
 
 
-
+$
 
 
 ++++++++++++
 Question #4: (10 points)
 ++++++++++++
 What is a Content Delivery Network (CDN)?  List and explain at least FOUR advantages in using a CDN.
+
+
+A content delivery network or content distribution network (CDN) is a large distributed system of servers deployed in multiple data centers across the Internet. Advantages include:
+1. Speed: It's first advantage is it's primary goal in delivering content at high speeds. Higher performance is a must with media related websites and CDN's satisfy those needs. How? As I mentioned before regarding the disadvantages of using JQuery too often, CDN's can virtually remedy that worry. CDN files are hosted on a different domain. In effect, a single CDN permits the browser to download more external scripts at the same time.
+
+2. Security: because the network infrastructure is distributed it insulates (to a certain point) their vulnerabiliy from DOS attacks. 
+
+3. Financial Savings: A CDN can distribute the load, save bandwidth, boost performance and reduce your existing hosting costs.
+This leans more towards the idea of having higher performance due to a distributed network.
+
+4. Capacity: Better CDNs offer higher availability, lower network latency and lower packet loss which ultimately makes for a happier user and isn't that the point of all this? To make sure that Glenn in Arizona can binge-watch episodes of Firefly without having to wait forever...
